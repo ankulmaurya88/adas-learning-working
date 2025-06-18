@@ -1,0 +1,319 @@
+/* .dashboard {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dial {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 8px solid #ccc;
+  border-radius: 50%;
+  background: radial-gradient(#222, #000);
+}
+
+.needle {
+  position: absolute;
+  width: 4px;
+  height: 130px;
+  background: white;
+  top: 20px;
+  left: 50%;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-out;
+}
+
+.center-text {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.speed {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.unit {
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+.status {
+  font-size: 20px;
+  color: limegreen;
+  margin-top: 10px;
+}
+
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.top-center { top: 10px; left: 50%; transform: translateX(-50%); }
+.top-left { top: 40px; left: 20px; }
+.top-right { top: 40px; right: 20px; }
+.bottom-left { bottom: 40px; left: 20px; }
+.bottom-right { bottom: 40px; right: 20px; }
+
+.icon img {
+  width: 100%;
+  height: 100%;
+} */
+
+
+
+/* speedometer.component.css */
+/* 
+.dashboard {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background: radial-gradient(circle at center, #111 0%, #000 90%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 30px #222;
+}
+
+.dial {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle at center,
+    #d0d0d0 0%,
+    #a0a0a0 40%,
+    #505050 90%
+  );
+  border: 10px solid #777;
+  box-shadow:
+    inset 0 8px 12px rgba(255, 255, 255, 0.5),
+    inset 0 -8px 10px rgba(0, 0, 0, 0.6),
+    0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.needle {
+  position: absolute;
+  width: 6px;
+  height: 140px;
+  background: linear-gradient(45deg, red, darkred);
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.8);
+  transition: transform 0.6s ease-out;
+  z-index: 10;
+}
+
+.center-cap {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #eee, #555);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    inset 0 2px 4px #fff,
+    0 2px 6px rgba(0, 0, 0, 0.8);
+  z-index: 15;
+}
+
+.center-text {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.speed {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.unit {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -12px;
+  color: #ccc;
+}
+
+.status {
+  font-size: 22px;
+  color: limegreen;
+  margin-top: 12px;
+  font-weight: 600;
+} */
+
+
+/* 
+.dial {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  /* metallic gradient here... */
+/* }
+
+.speed-labels {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  pointer-events: none;
+}
+
+.speed-label {
+  --radius: 130px; /* distance from center */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:
+    rotate(var(--angle))
+    translate(var(--radius))
+    rotate(calc(-1 * var(--angle)));
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  user-select: none;
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .dashboard {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background: radial-gradient(circle at center, #111 0%, #000 90%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 30px #222;
+  user-select: none;
+} */
+
+.dial {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle at center,
+    #d0d0d0 0%,
+    #a0a0a0 40%,
+    #505050 90%
+  );
+  border: 10px solid #777;
+  box-shadow:
+    inset 0 8px 12px rgba(255, 255, 255, 0.5),
+    inset 0 -8px 10px rgba(0, 0, 0, 0.6),
+    0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.needle {
+  position: absolute;
+  width: 6px;
+  height: 140px;
+  background: linear-gradient(45deg, red, darkred);
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.8);
+  transition: transform 0.6s ease-out;
+  z-index: 10;
+}
+
+.center-cap {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #131313, #555);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    inset 0 2px 4px #fff,
+    0 2px 6px rgba(0, 0, 0, 0.8);
+  z-index: 15;
+}
+
+.center-text {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.speed {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.unit {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -12px;
+  color: #ccc;
+}
+
+.status {
+  font-size: 22px;
+  color: limegreen;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* Speed labels around dial */
+.speed-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(243, 237, 237);
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+  transform-origin: center center;
+  /* transform-box: left right ; */
+   
+  user-select: none;
+}
+

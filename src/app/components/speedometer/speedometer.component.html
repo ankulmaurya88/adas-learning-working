@@ -1,0 +1,89 @@
+<!-- <div class="dashboard"> -->
+  <!-- <div class="icon top-center"><img src="assets/icons/warning.svg" /></div>
+  <div class="icon top-left"><img src="assets/icons/lane.svg" /></div>
+  <div class="icon top-right"><img src="assets/icons/assist.svg" /></div>
+  <div class="icon bottom-left"><img src="assets/icons/skid.svg" /></div>
+  <div class="icon bottom-right"><img src="assets/icons/pressure.svg" /></div> -->
+
+  <!-- <div class="dial">
+    <div class="needle" [ngStyle]="{'transform': 'rotate(' + rotationAngle + 'deg)'}"></div>
+    <div class="center-text">
+      <div class="speed">{{ speed }}</div>
+      <div class="unit">mph</div>
+      <div class="status">ACC</div>
+    </div>
+  </div>
+</div> -->
+
+<!-- speedometer.component.html -->
+<!-- <div class="dashboard">
+  <div class="dial"> -->
+    <!-- Needle rotates based on Angular rotationAngle -->
+    <!-- <div class="needle" [ngStyle]="{'transform': 'translate(-50%, -100%) rotate(' + rotationAngle + 'deg)'}"></div>
+    <div class="center-cap"></div> -->
+    
+    <!-- Speed and status text -->
+    <!-- <div class="center-text">
+      <div class="speed">{{ speed }}</div>
+      <div class="unit">mph</div>
+      <div class="status">ACC</div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div class="dial"> -->
+  <!-- Speed numbers -->
+  <!-- <div class="speed-labels">
+    <div class="speed-label" style="--angle: 0deg;">0</div>
+    <div class="speed-label" style="--angle: 30deg;">20</div>
+    <div class="speed-label" style="--angle: 60deg;">40</div>
+    <div class="speed-label" style="--angle: 90deg;">60</div>
+    <div class="speed-label" style="--angle: 120deg;">80</div>
+    <div class="speed-label" style="--angle: 150deg;">100</div>
+    <div class="speed-label" style="--angle: 180deg;">120</div>
+    <div class="speed-label" style="--angle: 210deg;">140</div>
+    <div class="speed-label" style="--angle: 240deg;">160</div>
+    <div class="speed-label" style="--angle: 270deg;">180</div>
+  </div> -->
+
+  <!-- Needle and center cap -->
+  <!-- <div class="needle" [ngStyle]="{'transform': 'translate(-50%, -100%) rotate(' + rotationAngle + 'deg)'}"></div>
+  <div class="center-cap"></div>
+
+  Center text -->
+  <!-- <div class="center-text">
+    <div class="speed">{{ speed }}</div>
+    <div class="unit">mph</div>
+    <div class="status">ACC</div>
+  </div>
+</div> -->
+
+
+<div class="dashboard">
+  <div class="dial">
+    <!-- Needle -->
+    <div class="needle" 
+         [style.transform]="'translate(-50%, -100%) rotate(' + rotationAngle + 'deg)'"></div>
+
+    <!-- Center cap -->
+    <div class="center-cap"></div>
+
+    <!-- Speed labels around dial -->
+    <div *ngFor="let tick of ticks" 
+         class="speed-label"
+         [style.transform]="'rotate(' + tick.angle + 'deg) translate(130px) rotate(-' + tick.angle + 'deg)'">
+      {{ tick.value }}
+    </div>
+
+    <!-- Speed text in center bottom -->
+    <div class="center-text">
+      <div class="speed">{{ speed }}</div>
+      <div class="unit">mph</div>
+      <div class="status">ACC</div>
+    </div>
+  </div>
+</div>
+

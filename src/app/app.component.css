@@ -1,0 +1,30 @@
+/* :host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+} */
+
+
+/* Set the root container to fill the full viewport height */
+/* Wrap everything in a vertical flexbox layout */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows and pushes footer down */
+.main-content {
+  flex: 1;
+}
+

@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar (already styled in sidebar.component.css) */
+app-sidebar {
+  flex-shrink: 0;
+}
+
+/* Dashboard content area */
+.main-content {
+  flex-grow: 1;
+  background-color: #f9fafb; /* light background */
+  padding: 1.5rem;
+  overflow-y: auto;
+}

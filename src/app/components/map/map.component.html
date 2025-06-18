@@ -1,0 +1,41 @@
+<!-- <div class="map-toolbar" *ngIf="mapInitialized">
+  <button (click)="startTracking()">▶️ Start Tracking</button> -->
+
+  <!-- <input
+    type="text"
+    [(ngModel)]="destinationAddress"
+    placeholder="Enter destination"
+  />
+  <button (click)="goToDestination()">📍 Go</button>
+</div> -->
+
+<!-- Loading message while waiting for GPS/map init -->
+<!-- <div *ngIf="!mapInitialized" class="loading">
+  🔄 Loading map... Please allow location access.
+</div> -->
+
+<!-- Map container shown only after initialized -->
+<!-- <div id="map" style="height: 90vh;" *ngIf="mapInitialized"></div> -->
+
+
+<!-- 
+<input type="text" [(ngModel)]="destinationAddress" placeholder="Enter destination" />
+<button (click)="goToDestination()">Go</button>
+<button (click)="startTracking()">Start Tracking</button>
+
+<div id="map" style="height: 500px;"></div> -->
+
+
+<div class="map-container">
+  <div class="map-toolbar">
+    <input type="text" [(ngModel)]="destinationAddress" placeholder="Enter destination" />
+    <button (click)="goToDestination()">Go</button>
+    <button (click)="startTracking()">Start Tracking</button>
+  </div>
+
+  <div id="map"></div>
+</div>
+
+
+
+
