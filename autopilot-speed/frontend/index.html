@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Autopilot Speed Monitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .speed {
+      font-size: 3em;
+      margin-top: 20px;
+      color: #0078d7;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚗 Autopilot Speed Monitor</h1>
+  <div class="speed" id="speed">Loading...</div>
+
+  <script>
+    const speedEl = document.getElementById("speed");
+
+    async function loadInitial() {
+      try {
+        const res = await fetch("http://localhost:8000/vehicle/speed");
+        const data = await res.json();
+        speedEl.textContent = data.speed_mps.toFixed(2) + " m/s";
+      } catch (err) {
+        console.error("REST fetch failed", err);
+        speedEl.textContent = "Error loading initial speed";
+      }
+    }
+
+    function setupWebSocket() {
+      const ws = new WebSocket("ws://localhost:8000/ws/speed");
+      ws.onmessage = (e) => {
+        const msg = JSON.parse(e.data);
+        speedEl.textContent = msg.speed_mps.toFixed(2) + " m/s";
+      };
+      ws.onerror = (err) => {
+        console.error("WebSocket error", err);
+      };
+    }
+
+    loadInitial();
+    setupWebSocket();
+  </script>
+</body>
+</html>
